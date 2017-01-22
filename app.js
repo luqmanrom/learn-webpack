@@ -1,3 +1,3 @@
-document.write('Intro to Webpack');
+document.write('Intro to Webpack with auto reload!!!! Wohoo');
 
 console.log("App Loaded");
