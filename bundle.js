@@ -42,11 +42,35 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(1);
+	module.exports = __webpack_require__(2);
+
+
+/***/ },
+/* 1 */
 /***/ function(module, exports) {
 
-	document.write('Intro to Webpack');
+	
+	console.log("This is utils file");
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(3);
+
+
+	document.write('Intro to Webpack with auto reload!!!! Wohoo');
 
 	console.log("App Loaded");
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+	console.log("This is the login file");
 
 /***/ }
 /******/ ]);
