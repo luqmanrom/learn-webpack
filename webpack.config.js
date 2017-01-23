@@ -6,9 +6,16 @@ module.exports = {
 	watcher: "true",
 
 	module: {
+		preLoaders: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: "jshint-loader"
+			}
+		],
 		loaders: [
 			{
-				test: /\.es6/,
+				test: /\.es6$/,
 				exclude: /node_modules/,
 				loader: "babel-loader"
 
